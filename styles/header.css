@@ -13,12 +13,12 @@ header{
     margin-top: 30px;
 }
 
-header div{
+.logo{
     min-height: 26px;
     max-width: 116.87px;
 }
 
-header div p{
+.logo p{
     font-size: 16px;
     font-weight: 400;
     color: #fff;
@@ -26,12 +26,18 @@ header div p{
     align-items: center;
 }
 
-header div p::before{
+.logo p::before{
     content: url(../img/logo.png);
 }
 
 header nav{
     display:none;
+}
+
+.menu-container{
+    position: relative;
+    width: 15vw;
+    top: 15%;
 }
 
 .btn-menu{
@@ -47,7 +53,7 @@ header nav{
     position: absolute;
     line-height: 28px;
     width: 15vw;
-    top: 10%;
+    
     list-style: none;
     display: none;
     z-index: 3;
