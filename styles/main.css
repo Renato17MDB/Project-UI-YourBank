@@ -1,0 +1,5 @@
+main{
+    justify-content: space-between;
+    min-width: 390px;
+    height: clamp(8720px, 100vh, 5674px);
+}

@@ -1,3 +1,6 @@
+
+@import url(../styles/header.css);
+@import url(../styles/main.css);
 @import url(../styles/footer.css);
 
 *{
@@ -19,6 +22,7 @@
 body{
     width: 100%;
     height: 100vh;
+    background-color: black;
 }
 
 .container-page{   
@@ -29,7 +33,7 @@ body{
     position: relative;
 }
 
-footer{
+main,footer{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -38,4 +42,15 @@ footer{
 
 a{
     text-decoration: none;
+}
+
+.dots-background{
+    width: 382px;
+    height: 307.42px;
+    position: absolute;
+    background-image: url(../img/dots.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 1em;
 }

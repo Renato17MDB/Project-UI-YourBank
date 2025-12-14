@@ -155,6 +155,8 @@ nav{
     }
     .subcontainer-footer{
         flex-direction: row;
+        font-size: 14px; /*VERIFICAR*/
+
     }
 }
 
