@@ -1,0 +1,51 @@
+.cta{
+    min-height: 223px;
+    max-height: 360px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 24px;
+    border: 1px solid var(--background--button);
+    border-radius: 15px;
+}
+
+.cta > .dots-background{
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.text-container-cta{
+    min-width: 298px;
+    max-width: 874px;
+    max-height: 227px;
+    width: 100%;
+    height: auto;
+    gap: 14px;
+}
+
+.text-container-cta h3,
+.text-container-cta p{
+    text-align: center;
+}
+
+.text-container-cta h3{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+@media screen and (min-width:700px) {
+    .cta{
+        flex-direction: row;
+        gap: 70px;
+    }
+
+    .text-container-cta{
+        padding: 30px;
+    }
+
+    .text-container-cta h3, .text-container-cta p{
+        text-align: left;
+    }
+}

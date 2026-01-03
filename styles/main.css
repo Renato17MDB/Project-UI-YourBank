@@ -1,5 +1,84 @@
 main{
-    justify-content: space-between;
-    min-width: 390px;
-    height: clamp(8720px, 100vh, 5674px);
+    margin: 15px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: auto;
+    padding: 5px;
+    width: 90%;
+}
+
+section{
+    /* min-width: 358px; */
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero{
+    min-height: 621.27px;
+    max-height: 818.2px;
+
+    background-color: green;
+}
+
+.products{
+    min-height: 457px;
+    max-height: 1076px;
+
+    background-color: yellow;
+}
+
+
+
+
+
+.faq{
+    min-height: 810px;
+    max-height: 1614px;
+
+    background-color: black;
+}
+
+
+.button-text{
+    font-size: 12px;
+    font-weight: 400;
+    color: #FFF;
+    transition:color 0.5s ease;
+}
+
+.highlight-text{
+    color: var(--background--button);
+}
+
+h1,h2,
+p{
+    text-align: center;
+}
+
+h1,h2{
+    font-size: 28px;
+    font-weight: 500;
+}
+
+h1,h2,h3,h4,h5{
+    color: var(--color-of-the-title);    
+}
+
+
+.text-container,
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    cursor: pointer;
+}
+
+p{
+    color: #fff;
+    font-weight: 300;
 }

@@ -1,0 +1,128 @@
+ .features{
+    min-height: 649px;
+    max-height: 1182px;
+    gap: 50px;
+}
+
+.text-container-features{
+    height: auto;
+    gap: 10px;
+}
+
+.container-features{
+    height: auto;
+    gap: 20px;
+}
+
+.options{
+    max-width: 366px;
+    min-width: 245px;
+    width: 100%;
+    min-height: 89px;
+    max-height: 267px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: var(--background--primary);
+}
+
+.options button{
+    width: 165px;
+    height: 49px;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--background--page);
+    border-radius: 50px;
+    border: 1px solid var(--background--secundary);
+    transition: background 0.3s ease;
+}
+
+
+.subcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 887px;
+    gap: 20px;
+}
+
+.card-features{
+    width: 100%;
+    height: 212px;
+    background: var(--background--primary);
+    border-radius: 15px;
+    border: 1px solid var(--background--secundary);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-features div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 27px;
+    gap: 10px;
+}
+
+.card-features h3{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.card-features h3,
+.card-features p{
+    text-align: left;
+}
+
+i{
+    color: var(--background--button);
+}
+
+@media screen and (min-width: 700px) {
+    .text-container-features h2,
+    .text-container-features p{
+        text-align: left;
+    }
+
+    .text-container-features p{
+        font-size: 16px;
+    }
+
+    .container-features{
+        flex-direction: row;
+    }
+
+    .options{
+        flex-direction: column;
+        gap:30px;
+        padding: 30px;
+    }
+
+    .options button:hover .button-text{
+        color: var(--background--button);
+}
+
+}  
+
+@media screen and (min-width: 1200px) {
+    .card-features h3{
+        font-size: 22px;
+    }
+  
+    p{
+        font-size: 18px;
+    }
+
+    .options{
+        padding: 40px;
+    }
+}

@@ -1,6 +1,10 @@
 
 @import url(../styles/header.css);
 @import url(../styles/main.css);
+@import url(../styles/use-cases.css);
+@import url(../styles/features.css);
+@import url(../styles/testimonials.css);
+@import url(../styles/cta.css);
 @import url(../styles/footer.css);
 
 *{
@@ -15,14 +19,14 @@
     --background--secundary:#262626; /*GREY 15*/
     --background--button:#CAFF33; /*GREEN 60*/
 
-    --paragraph--color:#b3b3b3;
-    --text--color:#FFF;
+    --paragraph--color:#b3b3b3; /*GREY 70*/
+    --color-of-the-title:#FFF;
 }
 
 body{
     width: 100%;
     height: 100vh;
-    background-color: black;
+    background: var(--background--page);
 }
 
 .container-page{   
@@ -31,6 +35,7 @@ body{
     align-items: center;
     justify-content: space-between;
     position: relative;
+    overflow: hidden;
 }
 
 main,footer{
@@ -53,4 +58,20 @@ a{
     background-repeat: no-repeat;
     background-size: contain;
     padding: 1em;
+}
+
+.open-account{
+    width: 144px;
+    height: 49px;
+    padding: 14px 24px;
+    display: flex;
+    gap: 10px;
+    background: var(--background--button);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.open-account > .button-text{
+    color:#000;
 }

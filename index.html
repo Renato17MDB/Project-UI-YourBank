@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>YourBank</title>
 </head>
 <body>
 
     <div class="dots-background"></div>
     <div class="container-page">
+        
         <header>
-            <div>
+            <div class="logo">
                 <p>YourBank</p>
             </div>
 
@@ -24,9 +26,9 @@
                 <a href="#">Security</a>
             </nav>
             
-           <div>
+           <div class="menu-container">
                 <button class="btn-menu">
-                    <img src="../project-yourbank/img/Icon.png" alt="Icon Button">
+                    <img src="./img/Icon.png" alt="Icon Button">
                 </button>
                 <ul class="menu-list">
                     <li><a href="#">Sign Up</a></li>
@@ -35,7 +37,385 @@
            </div>
         </header>
 
-        <main></main>
+        <main>
+            <section class="hero"></section>
+            
+            <section class="products"></section>
+            
+            <section class="cases">
+                <div class="text-container text-container-case">
+                    <h2><span class="highlight-text">Use Cases</span></h2>
+
+                    <p>
+                        At YourBank, we carter to the diverse needs of individuals and businesses alike, offering a wide range of financial solutions
+                    </p>
+                </div>
+
+                <div class="subcontainer-case container">
+                
+                    <div class="cards-subcontainer">
+                         <div class="dots-background"></div>
+                         
+                         <div  class="use-cases-grid">
+                            <div class="use-case-card">
+                                <div class="use-card">
+                                    <div class="bg-circle">
+                                        <span class="card-image managing-personal-finances"></span>
+                                    </div>
+                                </div>
+                                <p>Managing Personal Finances</p>
+                            </div>
+                            
+                            <div class="use-case-card">
+                                <div class="use-card">
+                                    <div class="bg-circle">
+                                        <span class="card-image saving-for-the-future"></span>
+                                    </div>
+                                </div>
+                                <p>Saving for the Future</p>
+                            </div>
+                         </div>
+
+                         <div class="use-cases-grid">                           
+                            <div class="use-case-card">
+                                <div class="use-card">
+                                    <div class="bg-circle">
+                                        <span class="card-image homeownership"></span>
+                                    </div>
+                                </div>
+                                <p>Homeownership</p>
+                            </div>
+                            
+                            <div class="use-case-card">
+                                <div class="use-card">
+                                    <div class="bg-circle">
+                                        <span class="card-image education-funding"></span>
+                                    </div>
+                                </div>
+                                <p>Education Funding</p>
+                            </div>
+                         </div>
+                    </div>
+
+                    <div class="individuals-card container">
+                        <div class="card-text container">
+                            <h3>For Individuals</h3>
+                            <p>
+                                For individuals, our mortgage services pave the way to homeownership, and our flexible personal loans provide vital support during various life milestones. We also prioritize retirement planning, ensuring, a financially secure future for our customers.
+                            </p>
+                        </div>
+                        
+                        <div class="metrics container">
+                            <div class="metric container">
+                                <p class="number">
+                                    <span class="highlight-text">78%</span>
+                                </p>
+
+                                <p>
+                                    Secure Retirement Planning
+                                </p>
+                            </div>
+
+                            <hr class="dotted">
+                            
+                            <div class="metric container">
+                                <p class="number">
+                                    <span class="highlight-text">63%</span>
+                                </p>
+
+                                <p>
+                                    Manageable Debt Consolidation
+                                </p>
+                            </div>
+                            
+                            <hr class="dotted">
+                            
+                            <div class="metric container">
+                                <p class="number">
+                                    <span class="highlight-text">91%</span>
+                                </p>
+
+                                <p>
+                                    Reducing financial burdens
+                                </p>
+                            </div>
+                        </div>
+                        <button>
+                            Lean More
+                        </button>
+                    </div>
+                </div>
+
+                <div class="subcontainer-case container subcontainer-case-reverse">
+                
+                    <div class="cards-subcontainer">
+                         <div class="dots-background"></div>
+                         
+                         <div  class="use-cases-grid">
+                            <div class="use-case-card">
+                                <div class="use-card">
+                                    <div class="bg-circle">
+                                        <span class="card-image startups-and-entrepreneus"></span>
+                                    </div>
+                                </div>
+                                <p>Startups and Entrepreneurs</p>
+                            </div>
+                            
+                            <div class="use-case-card">
+                                <div class="use-card">
+                                    <div class="bg-circle">
+                                        <span class="card-image cash-flow"></span>
+                                    </div>
+                                </div>
+                                <p>Cash Flow Management</p>
+                            </div>
+                         </div>
+
+                         <div class="use-cases-grid">                           
+                            <div class="use-case-card">
+                                <div class="use-card">
+                                    <div class="bg-circle">
+                                        <span class="card-image business-expansion"></span>
+                                    </div>
+                                </div>
+                                <p>Business Expansion</p>
+                            </div>
+                            
+                            <div class="use-case-card">
+                                <div class="use-card">
+                                    <div class="bg-circle">
+                                        <span class="card-image payment-solutions"></span>
+                                    </div>
+                                </div>
+                                <p>Payment Solutions</p>
+                            </div>
+                         </div>
+                    </div>
+
+                    <div class="individuals-card container">
+                        <div class="card-text container">
+                            <h3>For Business</h3>
+                            <p>
+                                For businesses, we empower growth with working capital solutions that optimize cash flow, and our tailored financing options fuel business expansion Whatever your fnancial aspirations, YourBank is committed to providing the right toals and support to achieve them.
+                            </p>
+                        </div>
+                        
+                        <div class="metrics container">
+                            <div class="metric container">
+                                <p class="number">
+                                    <span class="highlight-text">65%</span>
+                                </p>
+
+                                <p>
+                                    Cash Flow Management
+                                </p>
+                            </div>
+
+                            <hr class="dotted">
+                            
+                            <div class="metric container">
+                                <p class="number">
+                                    <span class="highlight-text">70%</span>
+                                </p>
+
+                                <p>
+                                    Drive Business Expansion
+                                </p>
+                            </div>
+                            
+                            <hr class="dotted">
+                            
+                            <div class="metric container">
+                                <p class="number">
+                                    <span class="highlight-text">45%</span>
+                                </p>
+
+                                <p>
+                                    Streamline payroll processing
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <button>
+                            Lean More
+                        </button>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="features">
+                
+                <div class="text-container text-container-features">
+                    <h2>Our <span class="highlight-text">Features</span></h2>
+
+                    <p>
+                        Experience a host of powerful features at YourBank, including seamless online banking, secure transactions, and personalized financial insights, all designed to enhance your banking experience.
+                    </p>
+                </div>
+
+                <div class="container container-features">
+                    <div class="options">
+                        <button>
+                            <span class="button-text">Online Banking</span>
+                        </button>
+
+                        <button>
+                            <span class="button-text">Financial Tools</span>
+                        </button>
+
+                        <button>
+                            <span class="button-text">Customer Support</span>
+                        </button>
+                    </div>
+                    <div class="subcontainer">
+                        
+                        <div class="card-features">
+                            <div>
+                                <h3>24/7 Account Access</h3>
+                                <i class="fi fi-br-arrow-up-right"></i>
+
+                            </div>
+                            <p>
+                                Enjoy the convenience of accessing your accounts anytime, anywhere through our secure online banking platform. Check balances, transfer funds, and pay bills with ease.
+                            </p>
+                        </div>
+                        
+                        <div class="card-features">
+                            <div>
+                                <h3>Mobile Banking App</h3>
+                                <i class="fi fi-br-arrow-up-right"></i>
+
+                            </div>
+                            <p>
+                                Stay connected to your finances on the go with our user-friendly mobile banking app. Easily manage your accounts, deposit checks, and make payments from your smartphone or tablet.
+                            </p>
+                        </div>
+                        
+                        <div class="card-features">
+                            <div>
+                                <h3>Secure Transactions</h3>
+                                <i class="fi fi-br-arrow-up-right"></i>
+
+                            </div>
+                            <p>
+                                Rest assured knowing that your transactions are protected by industry-leading security measures. We employ encryption and multi-factor authentication to safeguard your financial information.
+                            </p>
+                        </div>
+                        
+                        <div class="card-features">
+                            <div>
+                                <h3>Bill Pay and Transfers</h3>
+                                <i class="fi fi-br-arrow-up-right"></i>
+                            </div>
+                            <p>
+                                Save time and avoid late fees with our convenient bill pay service. Set up recurring payments or make one-time transfers between your accounts with just a few clicks.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="faq"></section>
+            
+            <section class="testimonials">
+                
+                <div class="subcontainer-testimonials">
+                    
+                    <div class="text-container text-container-testimonials">
+                        <h2>Our <span class="highlight-text">Testimonials</span> </h2>
+
+                        <p>
+                            Discover how YourBank has transformed lives with innovative digital solutions and personalized customer service. See why our clients trust us for a secure and prosperous financial journey.
+                        </p>
+                    </div>
+                    <div class="tabs">
+                        <button>
+                            <span class="button-text">For Individuals</span>
+                        </button>
+                        <button>
+                            <span class="button-text">For Businesses</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="container container-testimonials swiper">
+
+                    <div class="card-wrapper">
+
+                        <ul class="card-list swiper-wrapper">
+
+                            <li class="card-item swiper-slide">
+                                <div class="header-card">
+                                    <hr>
+                                    <span class="quotes"></span>
+                                    <hr>
+                                </div>
+                                
+                                <blockquote>
+                                    YourBank has been my trusted financial partner for years. Their personalized service and innovative digital banking solutions have made managing my finances a breeze.
+                                </blockquote>
+                                <cite>Sara T</cite>
+                            </li>
+
+                            <li class="card-item swiper-slide">
+                                <div class="header-card">
+                                    <hr>
+                                    <span class="quotes"></span>
+                                    <hr>
+                                </div>            
+
+                                <blockquote>
+                                    I recently started my own business, and YourBank has been instrumental in helping me set up my business accounts and secure the financing I needed. Their expert guidance and tailored solutions have been invaluable.
+                                </blockquote>
+
+                                <cite>
+                                    John D
+                                </cite>
+                            </li>
+
+                            <li class="card-item swiper-slide">
+                                <div class="header-card">
+                                    <hr>
+                                    <span class="quotes"></span>
+                                    <hr>
+                                </div>
+
+                                <blockquote>
+                                    I love the convenience of the YourBank mobile banking app. It allows me to stay on top of my finances and make transactions on the go. The app is user-friendly and secure, giving me peace of mind.
+                                </blockquote>
+
+                                <cite>
+                                    Emily G
+                                </cite>
+                            </li>
+
+                        </ul>
+
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+            
+            <section class="cta">
+                <div class="dots-background"></div>
+                <div class="text-container-cta text-container">
+                        <h3>Start your financial journey with <span class="highlight-text">YourBank today!</span> </h3>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at nulla cursus, rhoncus eros vel, sodales lectus. Donec suscipit libero laoreet, faucibus ligula et, porta. 
+                        </p>
+                    </div>
+
+                    <button class="open-account">
+                        <span class="button-text">Open Account</span>
+                    </button>
+            </section>
+        </main>
 
         <footer>
             <div class="container-footer footer-nav">
@@ -85,7 +465,9 @@
             </div>
         </footer>
 
-        <script src="../project-yourbank/scripts/button.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <script src="./scripts/button.js"></script>
+        <script src="./scripts/swiper.js"></script>
     </div>
 </body>
 </html>

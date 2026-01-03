@@ -1,3 +1,5 @@
+/*BOTÃO MENU*/
+
 const btnMenu = document.querySelector('.btn-menu');       
 const menuList = document.querySelector ('.menu-list');
 

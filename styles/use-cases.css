@@ -1,0 +1,199 @@
+.cases{
+    min-height: 1019px;
+    max-height: 2470px;
+    gap: 40px;
+}
+.text-container-case{
+    gap: 10px;
+}
+.subcontainer-case{
+    gap: 40px;
+  
+}
+.cards-subcontainer{
+    min-width: 358px;
+    max-width: 610px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 10px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--background--secundary);
+    background: var(--background--primary);
+    border-radius:10px ;
+}
+.cards-subcontainer > .dots-background{
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+.use-cases-grid{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+.use-case-card{
+    border: 1px solid var(--background--secundary);
+    border-radius: 5px;
+    padding: 20px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+    width: 154px;
+    background: var(--background--page);
+}
+.bg-circle{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: transparent;
+    transform: scale(0.8);
+    transition: opacity 0.3s ease, transform 0.3s ease;    
+}
+.card-image{
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 1em;
+    position: relative;
+    top: 20px;
+    left: 15px;
+}
+.use-card:hover .bg-circle{
+    background: radial-gradient(
+        circle,rgba(202, 255, 51, 0) 0%,rgba(202, 255, 51, 0.35) 100%);   
+    transform: scale(1);
+     
+}
+.managing-personal-finances{
+    background-image: url('../img/managing-personal-finances.png');
+}
+.saving-for-the-future{
+    background-image: url('../img/saving-for-the-future.png');
+}  
+.homeownership{
+    background-image: url('../img/homeowner.png');
+}
+.education-funding{
+    background-image: url('../img/education-funding.png');
+}
+.individuals-card{
+    gap: 50px;
+    align-items: center;
+}
+.card-text{
+    gap: 10px;
+}
+.card-text h3{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+.metrics{
+    min-width: 358px;
+    width: 100%;
+    gap: 30px;
+    padding: 50px;
+}
+.metric{
+    width: 100%;
+    margin: 0 auto;
+    gap: 2px;
+}
+.number{
+    font-size: 40px;
+    font-weight: 500;
+}
+.dotted{
+    width: 100%;
+    border: 1px dotted var(--background--secundary);
+}
+.individuals-card button{
+    width: 118px;
+    height: 49px;
+    padding: 14px 20px;
+    border-radius: 50px;
+    background: var(--background--primary);
+    border: 1px solid var(--background--secundary);
+    color: #FFF;
+
+}
+.startups-and-entrepreneus{
+    background-image: url("../img/startups-and-entrepreneurs.png");
+}
+
+.cash-flow{
+    background-image: url("../img/cash-flow-management.png");
+}
+
+.business-expansion{
+    background-image: url("../img/business-expansion.png");
+}
+
+.payment-solutions{
+    background-image: url("../img/payment-solutions.png");
+}
+
+
+@media screen and (min-width: 700px) {
+    .cases{
+        gap: 50px;
+    }
+    .text-container-case h2,
+    .text-container-case p{
+        text-align: left;
+    }
+
+    .subcontainer-case{
+        gap: 50px;
+    }
+
+    .cards-subcontainer{
+        padding: 30px;
+    }
+
+    .individuals-card{
+        gap: 40px;
+    }
+
+    .card-text h3,
+    .card-text p{
+        text-align: left;
+    }
+
+    .metrics{
+        flex-direction: row;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .dotted{
+        margin: auto 0;
+        height: 100%;
+        transform: rotate(90deg);
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .subcontainer-case{
+        flex-direction: row;
+        gap: 60px;
+    }
+    .subcontainer-case-reverse{
+        flex-direction: row-reverse;
+    }
+
+    .individuals-card{
+        align-items: normal;
+    }
+}
