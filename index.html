@@ -20,13 +20,13 @@
 
             <nav>
                 <a href="#">Home</a>
-                <a href="#">careers</a>
-                <a href="#">about</a>
+                <a href="#">Careers</a>
+                <a href="#">About</a>
                 <a href="#">Security</a>
             </nav>
             
            <div class="menu-container">
-                <button class="btn-menu">
+                <button class="btn-menu" type="button" aria-label="Open Menu">
                     <img src="img/Icon.png" alt="Icon Button">
                 </button>
                 <ul class="menu-list">
@@ -39,14 +39,79 @@
         <main>
             <section class="hero"></section>
             
-            <section class="products"></section>
+            <section class="products">
+                <div class="subcontainer-products">
+                    <div class="text-container text-container-products">
+                        <h2>Our <span class="highlight-text">Products</span></h2>
+
+                        <p>
+                            Discover a range of comprehensive and customizable banking products at YourBank, designed to suit your unique financial needs and aspirations.
+                        </p>
+                    </div>
+                    <div class="tabs">
+                        <button type="button">For Individuals</button>
+                        <button type="button">For Businesses</button>
+                    </div>
+                </div>
+
+                <div class="container-products container">
+                    
+                    <div class="container service-card">
+                         <div class="use-card">
+                            <div class="bg-circle">
+                                <span class="card-image checking-account-img"></span>
+                            </div>
+                        </div>
+                    
+                        <h4>Checking Accounts</h4>
+
+                        <p>
+                            Enjoy easy and convenient access to your funds with our range of checking account options. Benefit from features such as online and mobile banking, debit card, and free ATM access.
+                        </p>
+                    </div>
+                    
+                    <hr class="line">
+                    
+                    <div class="container service-card">
+                        
+                        <div class="use-card">
+                            <div class="bg-circle">
+                                <span class="card-image saving-account-img"></span>
+                            </div>
+                        </div>
+
+                        <h4>Savings Accounts</h4>
+
+                        <p>
+                            Build your savings with our competitive interest rates and flexible savings accounts options. Whether you're saving for a specific goal or want to grow your wealth over time, we have the right account for you.
+                        </p>
+                    </div>
+                    
+                    <hr class="line">
+                    
+                    <div class="container service-card">
+                
+                        <div class="use-card">
+                            <div class="bg-circle">
+                                <span class="card-image loans-and-mortgage-img"></span>
+                            </div>
+                        </div>
+
+                        <h4>Loans and Mortgage</h4>
+
+                        <p>
+                           Realize your dreams with our flexible loan and mortgage options. From personal loans to home mortgages, our experienced loan officers are here to guide you through the application process and help you secure the funds you need.
+                        </p>
+                    </div>
+                </div>
+            </section>
             
             <section class="cases">
                 <div class="text-container text-container-case">
                     <h2><span class="highlight-text">Use Cases</span></h2>
 
                     <p>
-                        At YourBank, we carter to the diverse needs of individuals and businesses alike, offering a wide range of financial solutions
+                       At YourBank, we cater to the diverse needs of individuals and businesses alike
                     </p>
                 </div>
 
@@ -139,9 +204,9 @@
                                 </p>
                             </div>
                         </div>
-                        <button>
-                            Lean More
-                        </button>
+                        <a href="#">
+                            Learn More
+                        </a>
                     </div>
                 </div>
 
@@ -235,9 +300,9 @@
                             </div>
                         </div>
                         
-                        <button>
-                            Lean More
-                        </button>
+                        <a href="#">
+                            Learn More
+                        </a>
                     </div>
                 </div>
             </section>
@@ -254,15 +319,15 @@
 
                 <div class="container container-features">
                     <div class="options">
-                        <button>
+                        <button type="button">
                             <span class="button-text">Online Banking</span>
                         </button>
 
-                        <button>
+                        <button type="button">
                             <span class="button-text">Financial Tools</span>
                         </button>
 
-                        <button>
+                        <button type="button">
                             <span class="button-text">Customer Support</span>
                         </button>
                     </div>
@@ -378,6 +443,72 @@
                                     <span class="quotes"></span>
                                     <hr>
                                 </div>
+                                
+                                <blockquote>
+                                    The intuitive interface and responsive support team make YourBank stand out. I feel confident and in control of my finances every day.
+                                </blockquote>
+                                <cite>Michael R</cite>
+                            </li>
+
+                            <li class="card-item swiper-slide">
+                                <div class="header-card">
+                                    <hr>
+                                    <span class="quotes"></span>
+                                    <hr>
+                                </div>
+                                
+                                <blockquote>
+                                    YourBank’s digital tools helped me streamline both my personal and business accounts. Everything I need is just a few clicks away.
+                                </blockquote>
+                                <cite>Daniel C</cite>
+                            </li>
+
+                            <li class="card-item swiper-slide">
+                                <div class="header-card">
+                                    <hr>
+                                    <span class="quotes"></span>
+                                    <hr>
+                                </div>
+                                
+                                <blockquote>
+                                    Security and transparency were my top priorities, and YourBank exceeded my expectations. It’s modern banking done right.
+                                </blockquote>
+                                <cite>Emily W</cite>
+                            </li>
+
+                            <li class="card-item swiper-slide">
+                                <div class="header-card">
+                                    <hr>
+                                    <span class="quotes"></span>
+                                    <hr>
+                                </div>
+                                
+                                <blockquote>
+                                    Managing my finances has never been this simple. The platform is fast, reliable, and designed with the user in mind.
+                                </blockquote>
+                                <cite>Lucas M</cite>
+                            </li>
+
+                            <li class="card-item swiper-slide">
+                                <div class="header-card">
+                                    <hr>
+                                    <span class="quotes"></span>
+                                    <hr>
+                                </div>
+                                
+                                <blockquote>
+                                    From customer support to digital features, YourBank delivers a seamless experience. I truly feel valued as a customer.
+                                </blockquote>
+                                <cite>Anna K</cite>
+                            </li>
+
+
+                            <li class="card-item swiper-slide">
+                                <div class="header-card">
+                                    <hr>
+                                    <span class="quotes"></span>
+                                    <hr>
+                                </div>
 
                                 <blockquote>
                                     I love the convenience of the YourBank mobile banking app. It allows me to stay on top of my finances and make transactions on the go. The app is user-friendly and secure, giving me peace of mind.
@@ -410,7 +541,7 @@
                         </p>
                     </div>
 
-                    <button class="open-account">
+                    <button type="button" class="open-account" aria-label="Open Account">
                         <span class="button-text">Open Account</span>
                     </button>
             </section>
@@ -456,9 +587,9 @@
                     <p>YourBank All Rights Reserved</p>
 
                     <div class="subcontainer-footer-social-media">
-                        <a href="">Privacy Policy</a>
+                        <a href="#">Privacy Policy</a>
                         <span>|</span>
-                        <a href="">Terms of Service</a>
+                        <a href="#">Terms of Service</a>
                     </div>
                 </div>
             </div>

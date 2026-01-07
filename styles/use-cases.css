@@ -2,6 +2,7 @@
     min-height: 1019px;
     max-height: 2470px;
     gap: 40px;
+
 }
 .text-container-case{
     gap: 10px;
@@ -117,7 +118,7 @@
     width: 100%;
     border: 1px dotted var(--background--secundary);
 }
-.individuals-card button{
+.individuals-card a{
     width: 118px;
     height: 49px;
     padding: 14px 20px;

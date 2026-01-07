@@ -8,6 +8,10 @@ footer{
     background: var(--background--primary);
 }
 
+footer i{
+    color: #000;
+}
+
 footer>div{
     width: 100%;
 }
@@ -93,6 +97,7 @@ nav{
     height: 44px;
     border-radius: 50%;
     border: none;
+    background: var(--background--button);
 }
 .subcontainer-footer{
     display: flex;

@@ -1,0 +1,47 @@
+.products{
+    gap: 60px;
+}
+
+.container-products{
+    gap: 30px;
+}
+
+.service-card{
+    gap: 20px;
+    align-items: center;
+} 
+
+.service-card h4{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.checking-account-img{
+    background-image: url(../img/briefcase.fill.png);
+}
+
+.saving-account-img{
+    background-image: url(../img/Union.png);
+}
+
+.loans-and-mortgage-img{
+    background-image: url(../img/Union\(1\).png);
+}
+
+@media screen and (min-width: 700px) {
+    .text-container-products h2,
+    .text-container-products p{
+        text-align: left;
+    }
+
+    .subcontainer-products{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .container-products{
+        flex-direction: row;
+        gap: 30px;
+    }
+}
