@@ -60,18 +60,92 @@ a{
     padding: 1em;
 }
 
-.open-account{
-    width: 144px;
-    height: 49px;
-    padding: 14px 24px;
-    display: flex;
-    gap: 10px;
-    background: var(--background--button);
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
+.open-account > .button-text{
+    color:#fff;
 }
 
-.open-account > .button-text{
-    color:#000;
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 1px solid var(--background--secundary);
+    border-radius: 50px;
+    cursor: pointer;
+    color: #FFF;
+    transition: 
+        background 0.5s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease,
+        color 0.3s ease
+}
+
+.button:hover{
+    transform: translateY(-1px);
+    background: var(--background--button);
+    border-color: var(--background--button);
+    box-shadow: 0 0 12px rgba(202, 255, 51, 0.35);
+    color: #000;
+}
+
+.text-btn{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+/*OPEN ACCOUNT BUTTON*/
+.button-account {
+  padding: 14px 24px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 14px 32px;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #CAFF33;
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius:50px ;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.2s ease;
+}
+
+/* brilho animado */
+.button-account::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 120%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.4),
+    transparent
+  );
+  transition: left 0.6s ease;
+}
+
+.button-account:hover::before {
+  left: 120%;
+}
+
+.button-account:hover {
+  background: #CAFF33;
+  color: #191919;
+  box-shadow: 0 0 24px rgba(202, 255, 51, 0.5);
+  transform: translateY(-2px);
+}
+
+/* acessibilidade */
+.button-account:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(202, 255, 51, 0.6);
 }

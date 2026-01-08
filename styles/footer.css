@@ -92,12 +92,28 @@ nav{
     top: 20px;
     z-index: 2;
 }
-.social-media button{
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    border: none;
-    background: var(--background--button);
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid transparent;
+  background: var(--background--button);
+  border-radius: 50%;
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.2s ease;
+}
+
+.social-link:hover {
+  color: #CAFF33;
+  border-color: #CAFF33;
+  box-shadow: 0 0 16px rgba(202, 255, 51, 0.4);
+  transform: scale(1.1);
 }
 .subcontainer-footer{
     display: flex;

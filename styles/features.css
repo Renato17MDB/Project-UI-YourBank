@@ -15,11 +15,6 @@
 }
 
 .options{
-    max-width: 366px;
-    min-width: 245px;
-    width: 100%;
-    min-height: 89px;
-    max-height: 267px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -29,18 +24,8 @@
 }
 
 .options button{
-    width: 165px;
-    height: 49px;
     padding: 14px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--background--page);
-    border-radius: 50px;
-    border: 1px solid var(--background--secundary);
-    transition: background 0.3s ease;
 }
-
 
 .subcontainer{
     display: flex;
