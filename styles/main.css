@@ -2,7 +2,7 @@ main{
     margin: 15px auto;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 35px;
     justify-content: space-between;
     height: auto;
     padding: 5px;
@@ -10,12 +10,11 @@ main{
 }
 
 section{
-    /* min-width: 358px; */
-    max-width: 1280px;
     width: 100%;
     display: flex;
     flex-direction: column;
     padding: 2px;
+    margin: 15px auto;
 }
 
 .hero{
@@ -25,18 +24,6 @@ section{
     background-color: green;
 }
 
-
-
-
-
-
-
-.faq{
-    min-height: 810px;
-    max-height: 1614px;
-
-    background-color: black;
-}
 
 
 .button-text{

@@ -1,33 +1,32 @@
 .products{
     gap: 60px;
 }
-
 .container-products{
     gap: 30px;
 }
-
+.tabs-product-container{
+    padding: 12px;
+}
+.tabs-product-container button{
+    padding: 10px 18px;
+}
 .service-card{
     gap: 20px;
     align-items: center;
 } 
-
 .service-card h4{
     font-size: 20px;
     font-weight: 400;
 }
-
 .checking-account-img{
     background-image: url(../img/briefcase.fill.png);
 }
-
 .saving-account-img{
     background-image: url(../img/Union.png);
 }
-
 .loans-and-mortgage-img{
     background-image: url(../img/Union\(1\).png);
 }
-
 @media screen and (min-width: 700px) {
     .text-container-products h2,
     .text-container-products p{

@@ -2,7 +2,6 @@
     min-height: 1019px;
     max-height: 2470px;
     gap: 40px;
-
 }
 .text-container-case{
     gap: 10px;
@@ -118,33 +117,42 @@
     width: 100%;
     border: 1px dotted var(--background--secundary);
 }
-.individuals-card a{
-    width: 118px;
-    height: 49px;
+.learn-more-link{
+    width: 170px;
     padding: 14px 20px;
     border-radius: 50px;
     background: var(--background--primary);
     border: 1px solid var(--background--secundary);
     color: #FFF;
-
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6;
+    transition: color 0.3s ease;
+}
+.learn-more-link::before{
+    content: "→";
+    margin-right: 5px;
+    transition: transform 0.3s ease;
+}
+.learn-more-link:hover{
+    color: var(--background--button);
+}
+.learn-more-link:hover::before{
+    transform: translateX(4px);
 }
 .startups-and-entrepreneus{
     background-image: url("../img/startups-and-entrepreneurs.png");
 }
-
 .cash-flow{
     background-image: url("../img/cash-flow-management.png");
 }
-
 .business-expansion{
     background-image: url("../img/business-expansion.png");
 }
-
 .payment-solutions{
     background-image: url("../img/payment-solutions.png");
 }
-
-
 @media screen and (min-width: 700px) {
     .cases{
         gap: 50px;

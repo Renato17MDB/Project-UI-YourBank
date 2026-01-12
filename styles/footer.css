@@ -7,11 +7,9 @@ footer{
 
     background: var(--background--primary);
 }
-
 footer i{
     color: #000;
 }
-
 footer>div{
     width: 100%;
 }
@@ -49,11 +47,31 @@ nav{
     font-weight: 400;
     color: #e4e4e7;
 }
+.footer-nav a{
+    position: relative;
+}
+.footer-nav a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s ease;
+}
+.footer-nav a:hover::after{
+    width: 100%;
+}
+.footer-nav a:hover{
+    color: var(--background--button);
+}
 /*SEGUNDO CONTAINER DO FOOTER*/
 .contacts-footer{
     min-height: 24px;
     gap: 20px;
     align-items: center;
+    cursor: pointer;
 }
 .contacts-inline{
     width: 100%;
@@ -92,7 +110,6 @@ nav{
     top: 20px;
     z-index: 2;
 }
-
 .social-link {
   display: inline-flex;
   align-items: center;
@@ -108,7 +125,6 @@ nav{
     box-shadow 0.3s ease,
     transform 0.2s ease;
 }
-
 .social-link:hover {
   color: #CAFF33;
   border-color: #CAFF33;

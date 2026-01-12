@@ -3,6 +3,7 @@
 @import url(../styles/products-section.css);
 @import url(../styles/use-cases.css);
 @import url(../styles/features.css);
+@import url(../styles/faq-section.css);
 @import url(../styles/testimonials.css);
 @import url(../styles/cta.css);
 @import url(../styles/footer.css);
@@ -46,7 +47,8 @@ main,footer{
 }
 
 a{
-    text-decoration: none;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .dots-background{
@@ -58,10 +60,6 @@ a{
     background-repeat: no-repeat;
     background-size: contain;
     padding: 1em;
-}
-
-.open-account > .button-text{
-    color:#fff;
 }
 
 .button{
@@ -79,7 +77,6 @@ a{
         border-color 0.3s ease,
         color 0.3s ease
 }
-
 .button:hover{
     transform: translateY(-1px);
     background: var(--background--button);
@@ -87,12 +84,10 @@ a{
     box-shadow: 0 0 12px rgba(202, 255, 51, 0.35);
     color: #000;
 }
-
 .text-btn{
     font-size: 13px;
     font-weight: 400;
 }
-
 /*OPEN ACCOUNT BUTTON*/
 .button-account {
   padding: 14px 24px;
@@ -115,7 +110,6 @@ a{
     box-shadow 0.3s ease,
     transform 0.2s ease;
 }
-
 /* brilho animado */
 .button-account::before {
   content: "";
@@ -132,20 +126,29 @@ a{
   );
   transition: left 0.6s ease;
 }
-
 .button-account:hover::before {
   left: 120%;
 }
-
 .button-account:hover {
   background: #CAFF33;
   color: #191919;
   box-shadow: 0 0 24px rgba(202, 255, 51, 0.5);
   transform: translateY(-2px);
 }
-
 /* acessibilidade */
 .button-account:focus-visible {
   outline: none;
   box-shadow: 0 0 0 3px rgba(202, 255, 51, 0.6);
 }
+.tabs{
+  min-width: 299px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--background--primary);
+  border: 1px solid var(--background--secundary);
+  border-radius: 50px;
+}
+
+

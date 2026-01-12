@@ -1,6 +1,4 @@
  .features{
-    min-height: 649px;
-    max-height: 1182px;
     gap: 50px;
 }
 
@@ -14,16 +12,14 @@
     gap: 20px;
 }
 
-.options{
-    display: flex;
+.features-container-tabs{
     flex-direction: row;
-    align-items: center;
     gap: 20px;
     padding: 20px;
-    background: var(--background--primary);
+
 }
 
-.options button{
+.features-container-tabs button{
     padding: 14px 20px;
 }
 
@@ -82,12 +78,7 @@ i{
         font-size: 16px;
     }
 
-    .container-features{
-        flex-direction: row;
-    }
-
-    .options{
-        flex-direction: column;
+    .features-container-tabs{
         gap:30px;
         padding: 30px;
     }
@@ -109,5 +100,14 @@ i{
 
     .options{
         padding: 40px;
+    }
+
+    .container-features{
+        flex-direction: row;
+    }
+
+    .features-container-tabs{
+        flex-direction: column !important;
+        height: 50vh;
     }
 }
