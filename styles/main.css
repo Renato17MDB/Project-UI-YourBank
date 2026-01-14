@@ -17,15 +17,6 @@ section{
     margin: 15px auto;
 }
 
-.hero{
-    min-height: 621.27px;
-    max-height: 818.2px;
-
-    background-color: green;
-}
-
-
-
 .button-text{
     font-size: 12px;
     font-weight: 400;

@@ -1,5 +1,6 @@
 @import url(../styles/header.css);
 @import url(../styles/main.css);
+@import url(../styles/hero-section.css);
 @import url(../styles/products-section.css);
 @import url(../styles/use-cases.css);
 @import url(../styles/features.css);
@@ -49,6 +50,7 @@ main,footer{
 a{
   cursor: pointer;
   text-decoration: none;
+  color: #FFF;
 }
 
 .dots-background{
@@ -104,6 +106,7 @@ a{
   cursor: pointer;
   overflow: hidden;
   border-radius:50px ;
+  width: 170px;
   transition:
     background 0.3s ease,
     color 0.3s ease,
@@ -141,7 +144,6 @@ a{
   box-shadow: 0 0 0 3px rgba(202, 255, 51, 0.6);
 }
 .tabs{
-  min-width: 299px;
   margin-top: 15px;
   display: flex;
   align-items: center;
@@ -149,6 +151,8 @@ a{
   background: var(--background--primary);
   border: 1px solid var(--background--secundary);
   border-radius: 50px;
+  min-width: 299px;
+  width: 100%;
 }
 
 

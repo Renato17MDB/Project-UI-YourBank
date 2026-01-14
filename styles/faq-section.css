@@ -19,6 +19,7 @@
     gap: 20px;
 
     max-height: 1379px;
+
     overflow-y: hidden;
 
     mask-image: linear-gradient(
@@ -43,12 +44,10 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
 
     gap: 20px;
-
-    height: 295px;
-
+   
     border-radius: 5px;
     border: 1px solid var(--background--secundary);
     padding: 30px;
@@ -74,11 +73,11 @@
 }
 
 /* ===== BOTÃO ===== */
-.faq > button{
+.btn-load-faq{
     padding: 14px 20px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     gap: 4px;
 
     border-radius: 50px;
@@ -88,6 +87,8 @@
     width: 155px;
     height: 49px;
     color: #FFF;
+
+    margin: 5px auto;
 }
 
 .faq button i{
@@ -127,9 +128,17 @@
     }
 
     .items-faq{
-        height: 100%;
-        width: 100%;
+        height: auto;
         padding: 40px;
         gap: 24px;
+    }
+
+    /*APENAS 4 CARDS SERÃO EXIBIDOS*/
+    .items-container:not(.is-open) .items-faq:nth-child(n+5){
+        display: none;
+    }
+
+    .items-container.is-open .items-faq{
+        display: flex;
     }
 }

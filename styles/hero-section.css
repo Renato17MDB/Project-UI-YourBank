@@ -1,0 +1,81 @@
+.hero{
+    gap: 80px;
+}
+
+.hero-card{
+    gap: 30px;
+    align-items: center;
+}
+
+.verified{
+    min-width: 245px;
+    max-width: 300px;
+    width: 100%;
+    padding: 8px 16px 8px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 4px;
+    background: var(--background--secundary);
+    border: none;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+.verified-img{
+    width: 20px;
+    height: 20px;
+    background-image: url('../img/Subtract.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: relative;
+}
+
+.verified p{
+    font-size: 16px;
+}
+
+.text-container-hero{
+    gap: 8px;
+}
+
+.outro-bloco{
+    height: 368px;
+    width: 305px;
+}
+
+@media screen and (min-width:700px) {
+    .hero{
+        flex-direction: row;
+        gap: 50px;
+        padding: 30px 100px 30px 30px;
+    }
+
+    .hero-card{
+        align-items: normal;
+        gap: 40px;
+    }
+
+    .text-container-hero h1,
+    .text-container-hero p{
+        text-align: left;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .hero{
+        padding: 60px 200px 60px 80px;
+        gap: 100px;
+    }
+
+    .hero-card{
+        gap: 60px;
+    }
+
+    .text-container-hero{
+        max-width: 570.81px;
+        width: 100%;
+        gap: 10px;
+    }
+}
