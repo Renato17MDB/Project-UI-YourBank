@@ -21,6 +21,8 @@
     --background--secundary:#262626; /*GREY 15*/
     --background--button:#CAFF33; /*GREEN 60*/
 
+    --deep--forest:#22251B;
+
     --paragraph--color:#b3b3b3; /*GREY 70*/
     --color-of-the-title:#FFF;
 }
@@ -152,7 +154,7 @@ a{
   border: 1px solid var(--background--secundary);
   border-radius: 50px;
   min-width: 299px;
-  width: 100%;
+  width: auto;
 }
 
 
