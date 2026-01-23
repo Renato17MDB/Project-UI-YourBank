@@ -49,6 +49,10 @@ main,footer{
     align-items: center;
 }
 
+ul{
+  list-style: none;
+}
+
 a{
   cursor: pointer;
   text-decoration: none;
@@ -156,5 +160,3 @@ a{
   min-width: 299px;
   width: auto;
 }
-
-

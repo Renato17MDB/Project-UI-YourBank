@@ -1,234 +1,220 @@
 .hero{
     gap: 80px;
-    position: relative;
 }
-
-.arrow-background{
-    width: 220px;
-    height: 201px;
-    background-image: url('../img/row.png');
-    background-position: center;
-    background-size: auto;
-    background-repeat: no-repeat;
-    padding: 1em;
-    position: absolute;
-    right: -40px;
-    top: 380px;
-    z-index: 1;
-}
-
 .hero-card{
     gap: 30px;
     align-items: center;
 }
-
-.verified{
-    min-width: 245px;
-    max-width: 300px;
-    width: 100%;
-    padding: 8px 16px 8px 8px;
+.subcontainer-hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+.verified-bar{
+    border-radius: 50px;
+    border: 1px solid var(--background--secundary);
     display: flex;
     align-items: center;
-    justify-content: space-around;
     gap: 4px;
-    background: var(--background--secundary);
-    border: none;
-    border-radius: 20px;
-    white-space: nowrap;
+    padding: 8px 16px 8px 8px;
+    
 }
-
 .verified-img{
-    width: 20px;
     height: 20px;
+    width: 20px;
     background-image: url('../img/Subtract.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
     position: relative;
+    padding: 1em;
 }
-
-.verified p{
-    font-size: 16px;
+.verified-bar p{
+    font-size: 12px;
 }
-
 .text-container-hero{
     gap: 8px;
 }
-
 .finance-card{
-    border: 1px solid var(--background--secundary);
+    border: 1px solid var(--background--button);
     border-radius: 5px;
-    background: var(--background--primary);
-    z-index: 2;
-    height: 368.2px;
+    padding: 20.51px;
+    align-items: center;
+    gap: 15.38px;
     position: relative;
 }
-
-.finance-card-container{
-    padding: 20.51px;
-    gap: 15.38px;   
+.transactions{
+    width: 100%;
+    gap: 10.26px;
+    margin-top: 20px;
 }
-
-.transactions p{
+.transactions h5{
     text-align: left;
+    font-size: 10.26px;
+    font-weight: 500;
 }
-
-.transactions-made{
-    height: 107.57px;
+.container-transactions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stack-wrapper{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: -14.36px;
 }
-
-.sent-to{
-    padding: 8.2px 12.31px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 5px auto;
-    gap: auto;
-    width: 80%;
-    border: 1px solid var(--background--secundary);
-    border-radius: 5px;
-}
-
-.sent-to:nth-child(1){
-    z-index: 3;
-    box-shadow: 0 12px 24px rgba(0,0,0,0.3);
-}
-
-.sent-to:nth-child(2){
-    z-index: 2;
-    transform: translate(12px 12px);
-    opacity: 0.8;
-}
-
-.sent-to:nth-child(3){
-    z-index: 1;
-    transform: translate(24px 24px);
-    opacity: 0.6;
-}
-
-.icon-btn{
-    background: var(--background--button);
-    border-radius: 50%;
-    border: 1px solid var(--background--primary);
-    width: 25px;
-    height: 25px;
-    padding: 5.13px;
-}
-
-.sent-to-person{
-   display: flex;
-   align-items: center;
-   justify-content: space-evenly;
-    gap: 5.13px;
-}
-
-.icon-btn{
-    background-image:url('../img/btn.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto;
+.stack{
     position: relative;
-    padding: 1em;
+    width: 260px;
+    height: 160px;
 }
-.name{
+.card{
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(35deg, #000,#fff);
+    color: #FFF;
+    border-radius: 16px;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: bolder;
     display: flex;
-    flex-direction: column;
+    align-items: flex-end;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+    transition: 
+        transform 0.45s ease,
+        opacity 0.45s ease;
 }
-.amount{
-    font-size: 12.31px;
-    font-weight: 400;
-    color: #fff;
-}
-.currency{
+.send-to{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5.16px 5.16px 5.16px 12.31px;
-    background: var(--deep--forest);
-    border-radius: 50px;
-    min-width: 219.57px;
-    max-width: 294.87px;
-    width: 50%;
-    position: absolute;
-    right: -25px;
-    top: 378px;
-
+   
 }
-.currency p{
+.text-container-card{
+    gap: 6.89px;
+}
+.text-transaction{
+    font-weight: 300;
     font-size: 9.23px;
+}
+.name{
+    font-size: 10.26px;
     font-weight: 400;
 }
-.coin{
-    background: var(--background--primary);
-    padding: 5.13px;
-    border-radius: 50px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4.1px;
+.number{
+    font-weight: 500;
+    font-size: 12px !important;
 }
-.coin button{
-    width: 25px;
-    height: 25px;
+.card:nth-child(1){
+    transform: translateY(0) scale(1);
+    z-index: 4;
+}
+.card:nth-child(2) {
+  transform: translateY(12px) scale(.95);
+  z-index: 3;
+  opacity: .9;
+}
+.card:nth-child(3) {
+  transform: translateY(24px) scale(.9);
+  z-index: 2;
+  opacity: .75;
+}
+
+
+button{
+    margin-top: 25px;
+    padding: 10px 24px;
+    border-radius: 30px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+button:hover{
+    background: #1d4ed8;
+}
+.exchange{
+    height: 179.02px;
+}
+.monthly-income,
+.supported-currency{
+    background: var(--deep--forest);
+    position: absolute;
+}
+.monthly-income{
+    border-radius: 5px;
+    padding: 8.2px 10.26px;
+    display: flex;
+    align-items: center;
+    gap: 5.13px;
+    top: -30px;
+    left: -10px;
+}
+.monthly-income button{
+    border: 1px solid var(--background--secundary);
+    background: var(--background--button);
+    width: 22.6px;
+    height: 22.53px;
+    padding: 5.13px;
+    gap: 5.13px;
+    border-radius: 50%;
+}
+.text-container-monthly{
+    gap: 0.51px;
+}
+.text-container-monthly:nth-child(1){
+    font-size: 10.26px;
+    font-weight: 400;
+}
+.text-container-monthly:nth-child(2){
+    font-size: 8.2px;
+    font-weight: 300;
+}
+.supported-currency{
+    display: flex;
+    align-items: center;
+    padding: 5.13px 12.31px 5.13px;
+    border-radius: 50px;
+    border: none;
+    right: -20px;
+    bottom: -50px;
+}
+.supported-currency p{
+    font-size: 9.23px;
+    margin-right: 5px;
+}
+.supported-currency ul{
+    display: flex;
+    padding: 5.13px;
+    gap: 4.1px;
+    background:var(--background--page);
+    border-radius: 50px;
+    align-items: center;
+}
+.supported-currency button{
+    width: 20.57px;
+    height: 20.46px;
     border-radius: 50px;
     background: var(--background--secundary);
     border: none;
 }
-.currency-symbol{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:auto;
-    padding: 1em;
-    width: 6.67px;
-    height: 8.79px;
-}
-.real{
-    background-image: url('../img/real.png');
-}
-.euro{
-    background-image: url('../img/euro.png');
-}
-.bitcoin{
-    background-image: url('../img/bitcoin.png');
-}
-.sparkles{
-    background-image: url('../img/Group.png');
-}
 
-@media screen and (min-width:700px) {
+@media screen and (min-width: 700px) {
     .hero{
-        flex-direction: row;
+        padding: 30px 40px;
         gap: 50px;
-        padding: 30px 100px 30px 30px;
     }
-
     .hero-card{
-        align-items: normal;
         gap: 40px;
     }
-
-    .text-container-hero h1,
-    .text-container-hero p{
-        text-align: left;
-    }
-}
-
-@media screen and (min-width:1200px) {
-    .hero{
-        padding: 60px 200px 60px 80px;
-        gap: 100px;
-    }
-
-    .hero-card{
-        gap: 60px;
-    }
-
     .text-container-hero{
-        max-width: 570.81px;
-        width: 100%;
         gap: 10px;
     }
+
 }
+
+@media screen and (min-width: 1200px) {}

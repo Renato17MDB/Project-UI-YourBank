@@ -42,90 +42,88 @@
         <main>
             <section class="hero">
                 <div class="container hero-card">
-                    <div class="verified">
-                        <span class="verified-img"></span>
-                        <p>
-                            No LLC Required, No Credit Check.
-                        </p>
+                    <div class="subcontainer-hero">
+                        <div class="verified-bar">
+                            <span class="verified-img"></span>
+                            <p>No LLC Required, No Credit Check.</p>
+                        </div>
+                        <div class="text-container text-container-hero">
+                            <h1>Welcome to YourBank Empowering Your <span class="highlight-text">Financial Journey</span></h1>
+
+                            <p>
+                                At YourBank, our mission is to provide comprehensive banking solutions that empower individuals and businesses to achieve their financial goals. We are committed to delivering personalized and innovative services that prioritize our customers' needs. 
+                            </p>
+                        </div>
                     </div>
-
-                    <div class="text-container text-container-hero">
-                        <h1>Welcome to YourBank Empowering Your
-                            <span class="highlight-text">Financial Journey</span>
-                        </h1>
-
-                        <p>
-                            At YourBank, our mission is to provide comprehensive banking solutions that empower individuals and business to achieve their financial goals. We are committed to delivering personalized and innoative services that prioritize our customer's needs. 
-                        </p>
-                    </div>
-
                     <button type="button" class="button-account open-account" aria-label="Open Account">
                         <span class="text-btn">Open Account</span>
                     </button>
                 </div>
+                <div class="container finance-card">
+                    
+                    <!-- <div class="monthly-income">
+                        <button type="button"></button>
+                        <div class="text-container text-container-monthly">
+                            <p >+$5000,00</p>
+                            <p >monthly Income</p>
+                        </div>
+                    </div> -->
+                    
+                    <div class="container transactions">
+                        <h5>Your Transactions</h5>
 
-                <div class="arrow-background"></div>
-                
-                <div class="finance-card">
-                    <div class="monthly"></div>
-                    <div class="finance-card-container container">
-                        <div class="transactions">
-                            <p>Your Transactions</p>
+                       <div class="container-transactions">
+                            <div class="stack-wrapper">
+                                <div class="stack">
 
-                            <div class="transactions-made">
-                                
-                                <div class="sent-to">
-                                    <div class="sent-to-person">
-                                        <button type="button" class="icon-btn"></button>
-                                        <div class="name">
-                                            <h5>Transaction</h5>
-                                            <p>Joel Kenley</p>
+                                    <div class="card">    
+                                        <div class="send-to">
+                                            <div class="text-container text-container-card">
+                                                <p class="text-transaction">Transaction</p>
+                                                <p class="name">Joel Kenley</p>
+                                            </div>
+                                            <p class="number">-$68.00</p>
                                         </div>
                                     </div>
-                                    <p class="amount">-$68.00</p>
-                                </div>
-                                
-                                 <div class="sent-to">
-                                    <div class="sent-to-person">
-                                        <button type="button" class="icon-btn"></button>
-                                        <div class="name">
-                                            <h5>Transaction</h5>
-                                            <p>Mark Smith</p>
+
+                                    <div class="card">    
+                                        <div class="send-to">
+                                            <div class="text-container text-container-card">
+                                                <p class="text-transaction">Transaction</p>
+                                                <p class="name">Mark Smith</p>
+                                            </div>
+                                            <p class="number">-$69.00</p>
                                         </div>
                                     </div>
-                                    <p class="amount">-$68.00</p>
-                                </div>
-                                
-                                 <div class="sent-to">
-                                    <div class="sent-to-person">
-                                        <button type="button" class="icon-btn"></button>
-                                        <div class="name">
-                                            <h5>Transaction</h5>
-                                            <p>Lenen Roy</p>
+
+                                    <div class="card">    
+                                        <div class="send-to">
+                                            <div class="text-container text-container-card">
+                                                <p class="text-transaction">Transaction</p>
+                                                <p class="name">Lenen Roy</p>
+                                            </div>
+                                            <p class="number">-$67.00</p>
                                         </div>
                                     </div>
-                                    <p class="amount">-$68.00</p>
+
                                 </div>
+
+                                <button type="button" id="next"></button>
                             </div>
-                        </div>
+                       </div>
                     </div>
-                    <div class="currency">
+                    
+                    <div class="container exchange"></div>
+                    
+                    <!-- <div class="supported-currency">
                         <p>Supported Currency</p>
-                        <div class="coin">
-                            <button type="button">
-                                <span class="currency-symbol real"></span>
-                            </button>
-                            <button type="button">
-                                <span class="currency-symbol euro"></span>
-                            </button>
-                            <button type="button">
-                                <span class="currency-symbol bitcoin"></span>
-                            </button>
-                            <button type="button">
-                                <span class="currency-symbol sparkles"></span>
-                            </button>
-                        </div>
-                    </div>
+                        <ul>
+                            <li><button aria-label="Real"></button></li>
+                            <li><button aria-label="Euro"></button></li>
+                            <li><button aria-label="Bitcoin"></button></li>
+                            <li><button aria-label="More currencies"></button></li>
+                        </ul>
+                    </div> -->
                 </div>
             </section>
             
@@ -828,6 +826,7 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
         <script src="./scripts/button.js"></script>
         <script src="./scripts/swiper.js"></script>
+        <script src="./scripts/carrossel.js"></script>
     </div>
 </body>
 </html>
