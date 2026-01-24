@@ -1,16 +1,20 @@
+/* Container principal da seção hero */
 .hero{
     gap: 80px;
 }
+/* Card principal dentro do hero */
 .hero-card{
     gap: 30px;
     align-items: center;
 }
+/* Subcontainer do hero (texto, badges, etc.) */
 .subcontainer-hero{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 12px;
 }
+/* Barra de verificação (ex: selo "verified") */
 .verified-bar{
     border-radius: 50px;
     border: 1px solid var(--background--secundary);
@@ -20,6 +24,7 @@
     padding: 8px 16px 8px 8px;
     
 }
+/* Ícone da barra de verificação */
 .verified-img{
     height: 20px;
     width: 20px;
@@ -30,12 +35,15 @@
     position: relative;
     padding: 1em;
 }
+/* Texto da barra de verificação */
 .verified-bar p{
     font-size: 12px;
 }
+/* Container de textos do hero */
 .text-container-hero{
     gap: 8px;
 }
+/* Card financeiro principal */
 .finance-card{
     border: 1px solid var(--background--button);
     border-radius: 5px;
@@ -44,32 +52,39 @@
     gap: 15.38px;
     position: relative;
 }
+/* Seção de transações */
 .transactions{
     width: 100%;
     gap: 10.26px;
     margin-top: 20px;
 }
-.transactions h5{
+/* Títulos de seções (transactions e exchange) */
+.transactions h5,
+.exchange h5{
     text-align: left;
     font-size: 10.26px;
     font-weight: 500;
 }
+/* Container do stack de cartões */
 .container-transactions{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+/* Wrapper do efeito de cards empilhados */
 .stack-wrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: -14.36px;
 }
+/* Área base onde os cards empilhados ficam */
 .stack{
     position: relative;
     width: 260px;
     height: 160px;
 }
+/* Card individual do stack */
 .card{
     position: absolute;
     inset: 0;
@@ -86,6 +101,7 @@
         transform 0.45s ease,
         opacity 0.45s ease;
 }
+/* Linha de envio/recebimento */
 .send-to{
     width: 100%;
     display: flex;
@@ -93,21 +109,26 @@
     justify-content: space-between;
    
 }
+/* Container de textos dentro do card */
 .text-container-card{
     gap: 6.89px;
 }
+/* Texto auxiliar da transação */
 .text-transaction{
     font-weight: 300;
     font-size: 9.23px;
 }
+/* Nome do destinatário */
 .name{
     font-size: 10.26px;
     font-weight: 400;
 }
-.number{
+/* Valor da transação */
+.price{
     font-weight: 500;
     font-size: 12px !important;
 }
+/* Card do topo do stack */
 .card:nth-child(1){
     transform: translateY(0) scale(1);
     z-index: 4;
@@ -122,23 +143,97 @@
   z-index: 2;
   opacity: .75;
 }
-
-
-button{
+/* Botão de navegação das transações */
+.transactions button{
     margin-top: 25px;
-    padding: 10px 24px;
-    border-radius: 30px;
-    border: none;
-    font-weight: 600;
-    cursor: pointer;
+    padding: 5.13px;
     transition: transform 0.3s;
+    width: 22px;
+    height: 22px;
+    border: 1px solid var(--background--secundary);
+    border-radius: 50%;
+    background: var(--background--button);
 }
-
-button:hover{
+/* Hover do botão */
+.transactions button:hover{
     background: #1d4ed8;
 }
+/* Seção de conversão de moedas */
 .exchange{
-    height: 179.02px;
+    width: 100%;
+    gap: 14.87px;
+}
+/* Grid 2x2 da conversão */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 58.1px 45.77px;
+    align-items: center;
+    border: 0.51px solid var(--background--secundary);
+    border-radius: 6.15px;
+}
+/* Item individual do grid */
+.item{
+    display: flex;
+    flex-direction: column;
+}
+/* Primeira linha do grid */
+.fisrt-line{
+    gap: 5.13px;
+}
+/* Linha com bandeira e país */
+.states{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5.13px;
+}
+/* Bandeira */
+.flag{
+    width: 20.57px;
+    height: 20.46px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: relative;
+    padding: 1em;
+}
+/* Bandeiras específicas */
+.india{
+    background-image: url('../img/india.png');
+}
+.usa{
+    background-image: url('../img/usa.png');
+}
+/* Nome do país */
+.states > p{
+    font-size: 9.23px;
+    font-weight: 400;
+}
+/* Nome da moeda */
+.coin{
+    font-size: 8.2px;
+    font-weight: 300;
+}
+/* Valor da conversão */
+.currency-convertion{
+    font-size: 10.26px;
+    font-weight: 500;
+}
+.exchange-btn{
+    display: flex;
+    justify-content: center;
+    gap: 5.13px;
+    padding: 8.2px 15.38px;
+    border-radius: 42.05px;
+    background: var(--deep--forest);
+    border: none;
+}
+.exchange-btn-text{
+    font-size: 9.23px;
+    font-weight: 400;
+    color: var(--background--button);
+    text-transform: capitalize;
 }
 .monthly-income,
 .supported-currency{
