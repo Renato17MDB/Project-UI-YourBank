@@ -35,10 +35,6 @@
     position: relative;
     padding: 1em;
 }
-/* Texto da barra de verificação */
-.verified-bar p{
-    font-size: 12px;
-}
 /* Container de textos do hero */
 .text-container-hero{
     gap: 8px;
@@ -57,13 +53,6 @@
     width: 100%;
     gap: 10.26px;
     margin-top: 20px;
-}
-/* Títulos de seções (transactions e exchange) */
-.transactions h5,
-.exchange h5{
-    text-align: left;
-    font-size: 10.26px;
-    font-weight: 500;
 }
 /* Container do stack de cartões */
 .container-transactions{
@@ -112,21 +101,6 @@
 /* Container de textos dentro do card */
 .text-container-card{
     gap: 6.89px;
-}
-/* Texto auxiliar da transação */
-.text-transaction{
-    font-weight: 300;
-    font-size: 9.23px;
-}
-/* Nome do destinatário */
-.name{
-    font-size: 10.26px;
-    font-weight: 400;
-}
-/* Valor da transação */
-.price{
-    font-weight: 500;
-    font-size: 12px !important;
 }
 /* Card do topo do stack */
 .card:nth-child(1){
@@ -205,16 +179,6 @@
 .usa{
     background-image: url('../img/usa.png');
 }
-/* Nome do país */
-.states > p{
-    font-size: 9.23px;
-    font-weight: 400;
-}
-/* Nome da moeda */
-.coin{
-    font-size: 8.2px;
-    font-weight: 300;
-}
 /* Valor da conversão */
 .currency-convertion{
     font-size: 10.26px;
@@ -228,12 +192,6 @@
     border-radius: 42.05px;
     background: var(--deep--forest);
     border: none;
-}
-.exchange-btn-text{
-    font-size: 9.23px;
-    font-weight: 400;
-    color: var(--background--button);
-    text-transform: capitalize;
 }
 .monthly-income,
 .supported-currency{
@@ -277,10 +235,6 @@
     border: none;
     right: -20px;
     bottom: -50px;
-}
-.supported-currency p{
-    font-size: 9.23px;
-    margin-right: 5px;
 }
 .supported-currency ul{
     display: flex;

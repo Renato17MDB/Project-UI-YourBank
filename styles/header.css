@@ -9,34 +9,32 @@ header{
     border-radius: 50px;
     margin-top: 30px;
 }
-
 .logo{
     min-height: 26px;
     max-width: 116.87px;
 }
-
 .logo p{
-    font-size: 16px;
-    font-weight: 400;
-    color: #fff;
     display: flex;
     align-items: center;
+    gap: 5px;
 }
-
 .logo p::before{
-    content: url(../img/logo.png);
+    content: "";
+    width: 26px;
+    height: 26px;
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
-
 header nav{
     display:none;
 }
-
 .menu-container{
     position: relative;
     width: 15vw;
     top: 15%;
 }
-
 .btn-menu{
     height: 40px;
     width: 56px;
@@ -44,55 +42,88 @@ header nav{
     border-radius: 50px;
     background: var(--background--button);
     position: relative;
+    transition: transform 0.25s ease, border 0.25s ease;
 }
-
+.btn-menu.active{
+    background: transparent;
+    border: 1px solid #2C2C2C;
+}
 .menu-list{
     position: absolute;
-    line-height: 28px;
-    width: 15vw;
-    list-style: none;
-    display: none;
     z-index: 3;
+    width: 20vw;
+    gap: 15px; 
+    list-style: none;
+    right: -10px;
+    overflow: hidden;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s ease;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
-
-header nav a,
-.menu-list a{
-        font-size: 14px;
-        color: #fff;
-    }
-
 .menu-list.show{
-    display: block;
-}
+    transform: scaleY(1);
+    transform-origin: top;
 
+    padding: 20px;
+
+    background: #111111;
+
+    border: 1px solid #2C2C2C;
+    border-radius: 14px;
+
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+
+    backdrop-filter: blur(6px);
+}
 @media screen and (min-width: 700px) {
     header{
-        padding: 6px 12px;
+       padding: 6px 12px;
+       backdrop-filter:  blur(12px);
+      -webkit-backdrop-filter: blur(12px); 
+       box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+       transition:  all 0.03 ease;
     }
     
+    .dropdown{
+        display: none;
+    }
+
     .btn-menu{
         display: none;
     }
 
     header nav{
         display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
         gap: 26px;
     }
 
-    header nav a{
-        text-transform: capitalize;
-    }
+    
 
     .menu-list{
         position: relative;
-        right: 45px;
+        right:0;
+
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: space-around;
+
         max-width: 161px;
         max-height: 45px;
-        gap: 20px;
-        margin-left: 15px;
+
+        gap: 10px;
+        margin-left: -20px;
+
+        /* 🔥 RESET IMPORTANTE */
+        transform: none;
+        overflow: visible;
     }
 }
 

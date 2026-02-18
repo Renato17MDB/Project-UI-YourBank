@@ -3,15 +3,12 @@
     gap: 50px;
     align-items: center;
 }
-
 .text-container-faq{
     gap: 10px;
 }
-
 .container-faq{
     width: 357px;
 }
-
 /* ===== CONTAINER ===== */
 .items-container{
     display: flex;
@@ -56,18 +53,7 @@
 .items-faq h5,
 .items-faq p{
     width: 100%;
-    text-align: left;
 }
-
-.items-faq h5{
-    font-weight: 400;
-    font-size: 18px;
-}
-
-.items-faq p{
-    color: var(--paragraph--color);
-}
-
 .items-faq > .line{
     width: 100%;
 }
@@ -111,10 +97,7 @@
         width: 100%;
     }
 
-    .text-container-faq h2,
-    .text-container-faq p{
-        text-align: left;
-    }
+   
 }
 
 /* ===== ≥ 1200px ===== */

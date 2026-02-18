@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+/*----------------------------- TÍTULOS -----------------------------*/
+h1,h2,h3,h4,h5{
+    text-align: center;
+}
+h1,h2{
+    font-size: 28px;
+    font-weight: 500;
+}
+/* Títulos de seções (transactions e exchange) */
+.transactions h5,
+.exchange h5{
+    text-align: left;
+    font-size: 10.26px;
+    font-weight: 500;
+}
+.service-card h4{
+    font-size: 20px;
+    font-weight: 400;
+}
+.card-text h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+.card-features h3{
+    font-size: 18px;
+    font-weight: 400;
+}
+.card-features h3{
+    text-align: left;
+}
+.items-faq h5{
+    text-align: left;
+}
+.items-faq h5{
+    font-weight: 400;
+    font-size: 18px;
+}
+.text-container-cta h3{
+    font-size: 24px;
+    font-weight: 400;
+}
+/*----------------------------- PARÁGRAFOS -----------------------------*/
+p{
+    color: var(--paragraph);
+    text-align: center;
+    font-weight: 300;
+}
+/*HEADER*/
+.logo p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+/*MAIN*/
+.supported-currency p{
+    font-size: 9.23px;
+    margin-right: 5px;
+}
+/* Nome do país */
+.states > p{
+    font-size: 9.23px;
+    font-weight: 400;
+}
+/* Nome da moeda */
+.coin{
+    font-size: 8.2px;
+    font-weight: 300;
+}
+/* Texto auxiliar da transação */
+.text-transaction{
+    font-weight: 300;
+    font-size: 9.23px;
+}
+/* Nome do destinatário */
+.name{
+    font-size: 10.26px;
+    font-weight: 400;
+}
+/* Valor da transação */
+.price{
+    font-weight: 500;
+    font-size: 12px !important;
+}
+/* Texto da barra de verificação */
+.verified-bar p{
+    font-size: 12px;
+}
+.number{
+    font-size: 40px;
+    font-weight: 500;
+}
+.card-features p,
+.items-faq p{
+    text-align: left;
+}
+.items-faq p{
+    color: var(--paragraph--color);
+}
+.text-container-testimonials p{
+    font-weight: 300;
+}
+.card-item blockquote{
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 25px;
+}
+.card-item cite{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--background--button);
+    margin-top: 20px;
+}
+
+/*FOOTER*/
+.footer-nav p{
+    font-size: 18px;
+    font-weight: 300;
+    color:#e4e4e7
+}
+.contacts-links p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #e4e4e7;
+}
+.subcontainer-footer p{
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: #b3b3b3;
+}
+.subcontainer-footer-social-media p{
+    color: #b3b3b3;
+}
+/*----------------------------- BOTÃO -----------------------------*/
+.button-text{
+    font-size: 12px;
+    font-weight: 400;
+    color: #FFF;
+    transition:color 0.5s ease;
+}
+.exchange-btn-text{
+    font-size: 9.23px;
+    font-weight: 400;
+    color: var(--background--button);
+    text-transform: capitalize;
+}
+/*----------------------------- LINKS -----------------------------*/
+header nav a,
+.menu-list a{
+    font-size: 12px;
+    color: #fff;
+}
+.learn-more-link{
+    color: #FFF;
+}
+.footer-nav nav a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #e4e4e7;
+}
+.subcontainer-footer-social-media a{
+    color: #b3b3b3;
+}
+
+@media screen and (min-width:700px) {
+    header nav a{
+        text-transform: capitalize;
+    }
+
+    /*MAIN*/
+    
+    .text-container-products h2,
+    .text-container-case h2,
+    .text-container-features h2,
+    .text-container-faq h2,
+    .text-container-testimonials h2{
+        text-align: left;
+    }
+
+    .card-text h3{
+        text-align: left;
+    }
+
+    .text-container-products p,
+    .text-container-case p,
+    .card-text p,
+    .text-container-features p,
+    .text-container-faq p,
+    .text-container-testimonials p
+    {
+        text-align: left;
+    }
+
+}
+
+@media screen and (min-width:1400px) {
+    p{
+        font-size: 16px;
+    }
+}
